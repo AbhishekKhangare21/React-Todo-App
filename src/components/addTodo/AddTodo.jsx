@@ -14,7 +14,7 @@ const getLocalList = () => {
   }
 };
 
-const AddTodo = () => {
+const AddTodo = ({ sectionTodo, setSectionTodo }) => {
   const [todoList, setTodoList] = useState("");
   const [list, setList] = useState(getLocalList());
 
@@ -43,7 +43,12 @@ const AddTodo = () => {
     <div className="addTodo">
       <form onSubmit={(e) => handleList(e)} className="listTodo">
         {list.map((L) => (
-          <List todo={L} key={L.id} />
+          <List
+            todo={L}
+            key={L.id}
+            sectionTodo={sectionTodo}
+            setSectionTodo={setSectionTodo}
+          />
         ))}
 
         <input
