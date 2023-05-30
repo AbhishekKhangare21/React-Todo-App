@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./sidebar.css";
 import { BsArrowLeft, BsMicrosoft, BsFillShareFill } from "react-icons/bs";
 import { TbCylinder } from "react-icons/tb";
@@ -65,7 +65,7 @@ const Sidebar = () => {
             <span className="public">
               <BsMicrosoft />
             </span>
-            <button>dark</button>
+            <button className="clearAll">Light Mode</button>
           </div>
         </div>
       </div>

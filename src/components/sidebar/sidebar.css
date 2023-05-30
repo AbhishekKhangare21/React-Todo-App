@@ -115,6 +115,16 @@
   font-size: 12px;
 }
 
-.modes button {
+.clearAll {
   margin-left: 10px;
+  padding: 5px 20px;
+  border: none;
+  background-color: #3772ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.clearAll:hover {
+  background-color: rgb(226, 60, 60);
+  transition: 100ms;
 }

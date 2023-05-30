@@ -16,7 +16,7 @@ const getLocalTodoList = (todo) => {
 const List = ({ todo }) => {
   const [singleTodo, setSingleTodo] = useState({ todoTitle: "", todoDesc: "" });
   const [todoList, setTodoList] = useState(getLocalTodoList(todo));
-
+  console.log(todoList);
   useEffect(() => {
     localStorage.setItem(`todoList${todo.id}`, JSON.stringify(todoList));
   }, [todoList]);
