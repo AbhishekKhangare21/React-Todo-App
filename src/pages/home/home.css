@@ -1,0 +1,7 @@
+.center {
+  display: flex;
+}
+
+.center span {
+  flex: 1;
+}

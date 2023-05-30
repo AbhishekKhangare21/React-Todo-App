@@ -1,0 +1,56 @@
+.section {
+  color: #fff;
+  background: #000000;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid #242731;
+}
+
+.sectionContainer h2 {
+  margin-left: 35px;
+  border-bottom: 2px solid #3772ff;
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+}
+
+.sectionDiv {
+  background: #191b20;
+  mix-blend-mode: normal;
+  border-radius: 12.2549px;
+  color: white;
+  padding: 5px;
+}
+
+.sectionDiv span {
+  margin: 15px;
+}
+
+.sectionDiv button {
+  color: #3772ff;
+  background: #a3e3ff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.sectionContainer2 {
+  display: flex;
+}
+
+.sectionContainer2 span {
+  flex: 3.5;
+}
+
+.sectionContainer2 .span2 {
+  flex: 1;
+  border-left: 2px solid #242731;
+}
+
+.span2 {
+  width: 10px;
+  height: 600px;
+}
