@@ -13,7 +13,7 @@ const getLocalTodoList = (todo) => {
   }
 };
 
-const List = ({ todo, sectionTodo, setSectionTodo }) => {
+const List = ({ todo }) => {
   const [singleTodo, setSingleTodo] = useState({
     id: "",
     todoTitle: "",
@@ -76,7 +76,9 @@ const List = ({ todo, sectionTodo, setSectionTodo }) => {
           />
         </p>
       </div>
+
       {/* ****************** add Todo **************** */}
+
       {todoList.map((t) => (
         <div className="todo" key={t.id}>
           <div className="todoTitle">
@@ -86,7 +88,7 @@ const List = ({ todo, sectionTodo, setSectionTodo }) => {
               </span>
               <p>{t.todoTitle}</p>
             </div>
-            <span className="add" onClick={() => setSectionTodo(t)}>
+            <span className="add">
               <RiEditCircleFill color="#9C92DF" />
             </span>
           </div>
