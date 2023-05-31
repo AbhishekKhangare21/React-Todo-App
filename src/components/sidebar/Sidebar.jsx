@@ -3,6 +3,7 @@ import "./sidebar.css";
 import { BsArrowLeft, BsMicrosoft, BsFillShareFill } from "react-icons/bs";
 import { TbCylinder } from "react-icons/tb";
 import { GoGraph } from "react-icons/go";
+import { FaPlusCircle } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
@@ -62,9 +63,6 @@ const Sidebar = () => {
             <button>Buy SXYZ</button>
           </div>
           <div className="modes">
-            <span className="public">
-              <BsMicrosoft />
-            </span>
             <button className="clearAll">Light Mode</button>
           </div>
         </div>
